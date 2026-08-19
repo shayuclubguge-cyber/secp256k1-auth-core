@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { STATS, SITE_NAME_EN, SITE_NAME_ZH, TAGLINE, BSCSCAN_CPU } from "../lib/site";
 
 export default function Hero() {
@@ -39,6 +40,12 @@ export default function Hero() {
           >
             在 BscScan 查看处理器
           </a>
+          <Link
+            to="/tutorial"
+            className="rounded-lg border border-zinc-700 px-8 py-3 text-base font-medium text-zinc-300 transition hover:border-amber-500/60 hover:text-amber-300"
+          >
+            新手教程：买晶体管 → 搭电路 → 流片
+          </Link>
         </div>
         <dl className="mx-auto mt-16 grid max-w-3xl grid-cols-2 gap-6 md:grid-cols-4">
           {STATS.map((s) => (
