@@ -12,9 +12,9 @@ export const BSCSCAN_CPU = `https://bscscan.com/address/${CPU_ADDRESS}`;
 export const BSCSCAN_TOKENS = `https://bscscan.com/address/${TRANSISTORS_ADDRESS}`;
 
 export const STATS = [
-  { value: "13,602", label: "与非门（NAND）" },
-  { value: "3,947", label: "锁存器（LATCH）" },
-  { value: "10", label: "链上电路（cid 1–13）" },
+  { value: "31,890", label: "与非门（NAND）" },
+  { value: "8,606", label: "锁存器（LATCH）" },
+  { value: "13", label: "链上电路（cid 1–13）" },
   { value: "100%", label: "字节级回读一致" },
 ];
 

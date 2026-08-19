@@ -21,7 +21,7 @@ export default function Hero() {
         <p className="mt-3 font-mono text-xl text-amber-400">{SITE_NAME_EN}</p>
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-zinc-400">
           {TAGLINE}——把 BNB Chain 每笔交易的签名验证（ecrecover）用
-          <span className="text-amber-300"> 13,602 个与非门</span>在链上重建。
+          <span className="text-amber-300"> 40,496 个晶体管</span>在链上重建。
           任何电路都可以免费、可信地回答：
           <span className="text-zinc-200">「这条消息是不是这个地址签的？」</span>
         </p>

@@ -16,14 +16,14 @@ export default function Economics() {
           <div className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-6">
             <p className="font-mono text-2xl font-bold text-amber-400">NAND</p>
             <p className="mt-2 text-sm text-zinc-400">
-              与非门代币（id 0）。铸造任何电路的基本砖块，本处理器由 13,602
+              与非门代币（id 0）。铸造任何电路的基本砖块，本处理器由 31,890
               个与非门构成。
             </p>
           </div>
           <div className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-6">
             <p className="font-mono text-2xl font-bold text-amber-400">LATCH</p>
             <p className="mt-2 text-sm text-zinc-400">
-              锁存器代币（id 1）。有状态电路的记忆单元，本处理器含 3,947
+              锁存器代币（id 1）。有状态电路的记忆单元，本处理器含 8,606
               个锁存器。
             </p>
           </div>

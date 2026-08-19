@@ -21,7 +21,7 @@ export default function Footer() {
           协议构建于 BNB Chain。所有电路网表指纹均可独立验证。
         </p>
         <p className="font-mono text-[11px] text-zinc-700">
-          NAND × 13,602 · LATCH × 3,947 · cid 1–13 · 2026-08-18 流片完成
+          NAND × 31,890 · LATCH × 8,606 · cid 1–13 · 2026-08-18 流片完成
         </p>
       </div>
     </footer>

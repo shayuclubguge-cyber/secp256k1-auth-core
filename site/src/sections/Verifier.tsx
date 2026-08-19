@@ -55,8 +55,8 @@ export default function Verifier() {
           现场验证一条签名
         </h2>
         <p className="mx-auto mt-3 max-w-xl text-center text-sm leading-relaxed text-zinc-500">
-          这里用软件库瞬时演示同一套算法；链上处理器以 13,602
-          个与非门逐门执行完全相同的运算——Keccak-256 摘要 → secp256k1
+          这里用软件库瞬时演示同一套算法；链上处理器以 40,496
+          个晶体管（31,890 NAND + 8,606 LATCH）逐门执行完全相同的运算——Keccak-256 摘要 → secp256k1
           公钥恢复 → 地址比对，每一步的电路网表都可在下方名册中查验。
         </p>
 
