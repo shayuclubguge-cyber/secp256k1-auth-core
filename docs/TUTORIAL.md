@@ -133,7 +133,7 @@ fadd64 是字串行 ALU：256 位运算拆成 4 拍，每拍吃一个 64 位字�
 ### 5.3 懒得画？直接用代码生成网表
 
 ```bash
-git clone https://github.com/shayuclubguge-cyber/secp256k1-auth-core.git
+git clone https://github.com/bsc-signverify/secp256k1-auth-core.git
 cd secp256k1-auth-core
 python - <<'EOF'
 from tapeout import Circuit

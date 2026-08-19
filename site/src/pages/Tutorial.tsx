@@ -3,7 +3,7 @@ import { TAPEOUT_URL, CPU_ADDRESS } from "../lib/site";
 
 const DETAIL_URL = `https://tapeout.net/#p/${CPU_ADDRESS}`;
 const GITHUB_TUTORIAL =
-  "https://github.com/shayuclubguge-cyber/secp256k1-auth-core/blob/main/docs/TUTORIAL.md";
+  "https://github.com/bsc-signverify/secp256k1-auth-core/blob/main/docs/TUTORIAL.md";
 
 function Section({
   id,

@@ -6,7 +6,7 @@
 The first on-chain ecrecover rebuilt from raw NAND gates — 13 circuits, 40,496 transistors, byte-verified on BNB Chain.
 
 - 处理器主页（TapeOut 协议）: https://tapeout.net/#p/0xa3b6d9121146c29fb236001b93a45cb7a78a2247
-- 演示站: https://shayuclubguge-cyber.github.io/secp256k1-auth-core/
+- 演示站: https://bsc-signverify.github.io/secp256k1-auth-core/
 - **新手教程（买晶体管 → 画布搭电路 → REF 我们的零件 → 流片）**: [`docs/TUTORIAL.md`](docs/TUTORIAL.md)
 - Circuits 合约: [`0xa3b6d9121146c29fb236001b93a45cb7a78a2247`](https://bscscan.com/address/0xa3b6d9121146c29fb236001b93a45cb7a78a2247)
 - Transistors (ERC-1155, NAND=id 0 / LATCH=id 1): [`0x40666990f6740a41e51391cec6559a2158177bf2`](https://bscscan.com/address/0x40666990f6740a41e51391cec6559a2158177bf2)
