@@ -1,0 +1,20 @@
+{
+  "name": "FairDice Core",
+  "symbol": "DICE",
+  "story": "Sign \u2192 Hash \u2192 Roll 1-6. Your wallet signature is the random seed. Real circuits do the math. No server, no manipulation.",
+  "circuits": "0xd0c027937d744c1d74820d88660c26c3c8d723bf",
+  "transistors": "0xeb489d263072a2af510ae6f3a7fb7265987bf149",
+  "create_tx": "0x04d7b6548c336bdaaad03c7612995ba50ffecb1debfc417e771d018ccdb1ef19",
+  "ref_cids": [
+    3,
+    6,
+    8,
+    13
+  ],
+  "ref_from": "0xa3b6d9121146c29fb236001b93a45cb7a78a2247",
+  "mint_nand_tx": "0xa13b2ab344f13fec178f679472132b7074c5bba4485c27860ffb3fd4bb3713f6",
+  "mint_latch_tx": "0xa344ea09b1d63d133f3561f13787e7a260766a9779760f75ccaca632c0848679",
+  "tapeout_tx": "0x15fe471fdff06d3016feaa779e410ea34cf9c9a61a5c3c50303416967ef0ece7",
+  "cid": 1,
+  "withdraw_tx": "0xecd90f7733070a0b0bcee6b6def82e83b8a91dc2a993855f5782c37750ae6ba2"
+}

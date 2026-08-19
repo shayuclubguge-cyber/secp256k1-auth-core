@@ -1,10 +1,10 @@
-# secp256k1 Auth Core —— 一键验证报告
+# FairDice Core —— 一键验证报告
 
-- 生成时间: 2026-08-19 01:27 UTC+08:00（脚本 `scripts/verify_release.py`，耗时 18s）
+- 生成时间: 2026-08-20 01:01 UTC+08:00（脚本 `scripts/verify_release.py`，耗时 20s）
 - 处理器合约: `0xa3b6d9121146c29fb236001b93a45cb7a78a2247`（BNB Chain 主网）
 - 本地测试: 本次跳过（--chain-only）
-- 链上回读: 13/13 颗字节级一致
-- 合计: 261,783 字节网表，31,890 NAND + 8,606 LATCH = 40,496 晶体管
+- 链上回读（FairDice 依赖闭包 cid 1–13）: 14/13 颗字节级一致
+- 合计: 268,611 字节网表，32,732 NAND + 8,609 LATCH = 41,341 晶体管
 
 | cid | 电路 | 引脚 | 字节 | NAND | LATCH | REF | sha256[0:12] | 一致 |
 |---|---|---|---|---|---|---|---|---|
@@ -21,6 +21,15 @@
 | 11 | kl_rho ρ移位 | 69→64 | 12,740 | 1,820 | 0 | 0 | a5dd3b52cb1b | ✓ |
 | 12 | kl_ringb 环B+χ装配 | 75→192 | 26,261 | 2,691 | 1,856 | 0 | c2be8eefec19 | ✓ |
 | 13 | kl_top 主控 REF×7 | 65→66 | 27,350 | 3,239 | 491 | 7 | dccbd34519c3 | ✓ |
+| 1 | DICE fairdice_ctrl 主控壳 REF×4 | 74→83 | 6,828 | 842 | 3 | 4 | 95c63687633e | ✓ |
 
 > 比对方式: eth_call `netlist(cid)` 回读链上字节 → SHA-256 →
 > 与本地 `vectors/*.net`（cid2 由 `tapeout/parts/mcore256.py` 现场重建）逐字节比对。
+
+## FairDice 主控壳（fairdice_ctrl）
+
+- 引脚: 74→83（≤255 ✓）  资源: 842 NAND + 3 LATCH + 4 REF
+- 网表: `vectors/fairdice_ctrl.net`（6,828B）
+- sha256: `95c63687633e1a7d7d5cbb9da91a624bd0ff04cba9ed95e01aa66af8d220e75e`
+- REF 缝合: ecrecover_ctrl cid8（AUTH 验签）/ kl_top cid13（HASH 种子）/ fadd64b cid6（MIX 高度混合）/ piso256 cid3（STREAM 位流取模）
+- 链上状态: cid1 @ 0xd0c027937d744c1d74820d88660c26c3c8d723bf 已回读比对

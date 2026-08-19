@@ -1,0 +1,11 @@
+{
+  "name": "ModMath Core",
+  "symbol": "MMAT",
+  "circuits": "0x9b30f16fb5f0c91343e678d94670a0d8b231a40d",
+  "transistors": "0x4050986a35c940299b714ff864b14fb250c1f859",
+  "create_tx": "0xfdb16d99adae9a2b7bc498711bfc3ee430248fcf834240c2ff56659676dcf9a2",
+  "mint_tx": "0x3c6831ac82c376998de2a23e34d37b17c775c30031e6089c344e85b66403d186",
+  "tapeout_tx": "0xf9bdd26d2a33c393eeb5160af7246b77465db535ed4e663de0b1d053dcd9b187",
+  "cid": 1,
+  "withdraw_tx": "0xbf4e85f422f6ea20edd0394bfbb01aa532eb93d8cf90f256c36c8ee12143aa3c"
+}

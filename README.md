@@ -28,6 +28,21 @@ python scripts/independent_audit.py    # 约 3–5 分钟，只用公开 RPC
 
 审计报告：[`docs/INDEPENDENT_AUDIT.md`](docs/INDEPENDENT_AUDIT.md) · 验证报告：[`docs/VERIFY_REPORT.md`](docs/VERIFY_REPORT.md)
 
+## 衍生处理器（REF 复用生态）
+
+ECREC 的 13 颗零件全部支持跨处理器 REF 引用（零成本、零许可）。以下三个衍生处理器
+全部复用同一份链上零件，各自一键验证：
+
+| 处理器 | symbol | Circuits 合约 | 说明 | 专项验证 |
+|---|---|---|---|---|
+| ModMath Core | MMAT | [`0x9b30f16fb5f0c91343e678d94670a0d8b231a40d`](https://bscscan.com/address/0x9b30f16fb5f0c91343e678d94670a0d8b231a40d) | 通用密码学运算库：mod_add / mod_mul / serialize / bus_transfer 一颗电路全包（主控壳 771 NAND + 4 REF） | `python scripts/verify_release.py --modmath-only` |
+| Keccak Core | KCCORE | [`0x4be50509c8cecfd6fe09b955d27957d508f93a38`](https://bscscan.com/address/0x4be50509c8cecfd6fe09b955d27957d508f93a38) | Keccak-256 底层零件库：5 颗原语零件 + 缝合主控，纯 REF 复用（0 铸币 0 流片） | `python scripts/verify_release.py --keccak-core-only` |
+| FairDice Core | DICE | [`0xd0c027937d744c1d74820d88660c26c3c8d723bf`](https://bscscan.com/address/0xd0c027937d744c1d74820d88660c26c3c8d723bf) | 链上可验证公平骰子：签名 → Keccak 种子 → mod 6 + 1（主控壳 842 NAND + 3 LATCH + 4 REF，首条链上确认的深度 3 REF 嵌套） | `python scripts/verify_release.py --fairdice-only` |
+
+设计/验证文档：[`docs/MODMATH_CORE.md`](docs/MODMATH_CORE.md) ·
+[`docs/KECCAK_CORE_VERIFY_REPORT.md`](docs/KECCAK_CORE_VERIFY_REPORT.md) ·
+[`docs/FAIRDICE_CORE.md`](docs/FAIRDICE_CORE.md)
+
 ## 链上电路名册（cid 1–13）
 
 | cid | 电路 | 引脚 | 字节 | NAND | LATCH | sha256[0:12] |
@@ -53,10 +68,11 @@ BSC 单交易 gas 协议上限 16,777,216（BEP-652），实测 gas ≈ 421 × �
 ## 仓库结构
 
 - `tapeout/` — 网表生成器与本地仿真器（NAND / LATCH / REF 三原语）
-- `tapeout/parts/` — 各电路零件的构造代码（含 Keccak 黄金模型）
-- `vectors/` — 全部链上网表 `.net` 文件 + 清单
-- `tests/` — 21 项本地测试（门级对拍 + 黄金模型 + 真实 cid 注册）
-- `scripts/verify_release.py` — 一键验证（测试 + 链上回读 + 报告）
+- `tapeout/parts/` — 各电路零件的构造代码（含 Keccak 黄金模型与三个衍生处理器主控壳）
+- `vectors/` — 全部链上网表 `.net` 文件 + 清单 + 各处理器发射状态
+- `tests/` — 23 项本地测试（门级对拍 + 黄金模型 + 真实 cid 注册）
+- `scripts/verify_release.py` — 一键验证（测试 + 链上回读 + 报告；支持四个处理器专项）
+- `scripts/*_launch.py` — 各处理器发射脚本（precheck/create/mint/tapeout/withdraw/verify）
 - `scripts/independent_audit.py` — 独立审计（自带纯 Python Keccak-256，零项目代码依赖）
 - `site/` — 演示站源码（React + Vite + Tailwind + ethers，含现场验签）
 - `docs/` — 设计文档、验证报告、审计报告与证据 JSON

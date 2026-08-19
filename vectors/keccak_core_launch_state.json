@@ -1,0 +1,17 @@
+{
+  "name": "Keccak Core",
+  "symbol": "KCCORE",
+  "story": "Keccak-256 deconstructed \u2014 five primitive parts + stitch controller, REF-stitched raw NAND for custom hash variants",
+  "circuits": "0x4be50509c8cecfd6fe09b955d27957d508f93a38",
+  "transistors": "0xaec842910584c7d3459f581e101febca684a85f3",
+  "create_tx": "0xbccf85600becdbd4db6fa310cd53892c8bd27690f8929198ce75604cb5e0f572",
+  "reuse_cids": [
+    7,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "reuse_from": "0xa3b6d9121146c29fb236001b93a45cb7a78a2247"
+}

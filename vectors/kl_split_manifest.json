@@ -29,7 +29,7 @@
   },
   "kl_top": {
     "bytes": 27350,
-    "sha256": "b9ed1457e39c6978c67664ba3498fe58cbca8743427f8bd35daa25d54a65784b",
+    "sha256": "dccbd34519c37277e8bcbd4279bf3c709c65cd7f69b280496ac7ddd228fbdfeb",
     "n_in": 65,
     "n_out": 66,
     "gas_est": 11514350
