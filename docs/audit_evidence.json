@@ -1,0 +1,188 @@
+{
+  "chainId": 56,
+  "code_Circuits": {
+    "addr": "0xa3b6d9121146c29fb236001b93a45cb7a78a2247",
+    "bytes": 295
+  },
+  "code_Transistors": {
+    "addr": "0x40666990f6740a41e51391cec6559a2158177bf2",
+    "bytes": 295
+  },
+  "code_Witness": {
+    "addr": "0xA2dEFD5DE77698eA3896dF9972CD35a9b6FF7DCf",
+    "bytes": 130
+  },
+  "code_Factory": {
+    "addr": "0x68224F668083c29e9800Be2a646d42d18cedF7e2",
+    "bytes": 130
+  },
+  "name": "secp256k1 Auth Core",
+  "symbol": "ECREC",
+  "creation_tx": {
+    "hash": "0x8c2b4e8f7448d620bec9e3cd8fc4970bab4e3068c435fb4463b39240ec4afcfb",
+    "to": "0x68224f668083c29e9800be2a646d42d18cedf7e2",
+    "from": "0x53bdd02b35022f5f2693c252d86d9093ccf95d0b",
+    "block": 116567832,
+    "time_utc8": "2026-08-18 09:24:40",
+    "status": "0x1",
+    "gasUsed": 874097,
+    "n_logs": 5
+  },
+  "factory_index_534": null,
+  "netlists": {
+    "1": {
+      "bytes": 21447,
+      "sha12": "c22f8c74b0de",
+      "claimed": "c22f8c74b0de",
+      "match": true
+    },
+    "2": {
+      "bytes": 20769,
+      "sha12": "37eb121673db",
+      "claimed": "37eb121673db",
+      "match": true
+    },
+    "3": {
+      "bytes": 7772,
+      "sha12": "356cdf33ca96",
+      "claimed": "356cdf33ca96",
+      "match": true
+    },
+    "4": {
+      "bytes": 18714,
+      "sha12": "83beeeb0b50e",
+      "claimed": "83beeeb0b50e",
+      "match": true
+    },
+    "5": {
+      "bytes": 18714,
+      "sha12": "83beeeb0b50e",
+      "claimed": "83beeeb0b50e",
+      "match": true
+    },
+    "6": {
+      "bytes": 21447,
+      "sha12": "c22f8c74b0de",
+      "claimed": "c22f8c74b0de",
+      "match": true
+    },
+    "7": {
+      "bytes": 14854,
+      "sha12": "2e0a1609fb8f",
+      "claimed": "2e0a1609fb8f",
+      "match": true
+    },
+    "8": {
+      "bytes": 24351,
+      "sha12": "9cad2f38db0e",
+      "claimed": "9cad2f38db0e",
+      "match": true
+    },
+    "9": {
+      "bytes": 23682,
+      "sha12": "5f62ced6d705",
+      "claimed": "5f62ced6d705",
+      "match": true
+    },
+    "10": {
+      "bytes": 23682,
+      "sha12": "5f62ced6d705",
+      "claimed": "5f62ced6d705",
+      "match": true
+    },
+    "11": {
+      "bytes": 12740,
+      "sha12": "a5dd3b52cb1b",
+      "claimed": "a5dd3b52cb1b",
+      "match": true
+    },
+    "12": {
+      "bytes": 26261,
+      "sha12": "c2be8eefec19",
+      "claimed": "c2be8eefec19",
+      "match": true
+    },
+    "13": {
+      "bytes": 27350,
+      "sha12": "dccbd34519c3",
+      "claimed": "dccbd34519c3",
+      "match": true
+    }
+  },
+  "cid0_exists": false,
+  "cid14_exists": false,
+  "creation_receipt_logs": [
+    {
+      "address": "0x40666990f6740a41e51391cec6559a2158177bf2",
+      "topics": [
+        "0x1cf3b03a6cf19fa2baba4df148e9dcabedea7f8a5c07840e207e5c089be95d3e",
+        "0x000000000000000000000000a528e147d7e065249fc52864502c9b245c6c9f66"
+      ],
+      "data": "0x"
+    },
+    {
+      "address": "0xa3b6d9121146c29fb236001b93a45cb7a78a2247",
+      "topics": [
+        "0x1cf3b03a6cf19fa2baba4df148e9dcabedea7f8a5c07840e207e5c089be95d3e",
+        "0x000000000000000000000000f8d6d8eb894d6971c8976ad8b4971cbefe028156"
+      ],
+      "data": "0x"
+    },
+    {
+      "address": "0x40666990f6740a41e51391cec6559a2158177bf2",
+      "topics": [
+        "0xc7f505b2f371ae2175ee4913f4499e1f2633a7b5936321eed1cdaeb6115181d2"
+      ],
+      "data": "0x0000000000000000000000000000000000000000000000000000000000000001"
+    },
+    {
+      "address": "0xa3b6d9121146c29fb236001b93a45cb7a78a2247",
+      "topics": [
+        "0xc7f505b2f371ae2175ee4913f4499e1f2633a7b5936321eed1cdaeb6115181d2"
+      ],
+      "data": "0x0000000000000000000000000000000000000000000000000000000000000001"
+    },
+    {
+      "address": "0x68224f668083c29e9800be2a646d42d18cedf7e2",
+      "topics": [
+        "0x2e8868f18a1eaf0222b5b09484fdf12163e9741393f8457cd79d2ae42b2d2290",
+        "0x000000000000000000000000a3b6d9121146c29fb236001b93a45cb7a78a2247",
+        "0x00000000000000000000000040666990f6740a41e51391cec6559a2158177bf2",
+        "0x00000000000000000000000053bdd02b35022f5f2693c252d86d9093ccf95d0b"
+      ],
+      "data": "0x000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000f424000000000000000000000000000000000000000000000000000005af3107a40000000000000000000000000000000000000000000000000000000000000000013736563703235366b31204175746820436f726500000000000000000000000000"
+    }
+  ],
+  "erc1155": true,
+  "mints": {
+    "by_id": {
+      "0": 31899,
+      "1": 8649
+    },
+    "total": 40548,
+    "events": 17,
+    "minters": {
+      "0x53bdd02b35022f5f2693c252d86d9093ccf95d0b": 40148,
+      "0x6eb36a927a0b46c510e13746832ca8cf585e18f3": 400
+    },
+    "latest_block": 116682561
+  },
+  "mint_sim_正确价 mint(0,1) 付 2×1e14 wei": "success",
+  "mint_sim_少付 mint(0,1) 付 1×1e14 wei": "revert: CALL_REVERT:{'code': 3, 'message': 'execution reverted: insufficient: 0x08c379a00000000000000000000000000000000000000000",
+  "mint_sim_封顶内 mint(0, 959452)": "success",
+  "mint_sim_超封顶 mint(0, 959453)": "revert: CALL_REVERT:{'code': 3, 'message': 'execution reverted: supply cap: 0x08c379a0000000000000000000000000000000000000000000",
+  "evaluate_selector": "136ade26",
+  "cid7_eval": {
+    "passed": 4,
+    "total": 4
+  },
+  "circuits_logs": {
+    "n_logs": 28,
+    "tx_senders": {
+      "0x53bdd02b35022f5f2693c252d86d9093ccf95d0b": 9,
+      "0x6eb36a927a0b46c510e13746832ca8cf585e18f3": 5
+    }
+  },
+  "balance_本处理器 Circuits": 0.0,
+  "balance_老橘子 KECCAK 库": 0.0
+}

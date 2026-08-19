@@ -1,0 +1,66 @@
+{
+  "adder64": {
+    "n_in": 129,
+    "n_out": 65,
+    "gates": 1090,
+    "instructions": 1090,
+    "bytes": 7630,
+    "sha256": "d6ea8de4fdf9a11132bb73eb733b18994268257db66c96714bd83bc1170d2d2a"
+  },
+  "u256_add_mod(阶段3)": {
+    "n_in": 512,
+    "n_out": 256,
+    "gates": 16641,
+    "instructions": 16641,
+    "bytes": 116487,
+    "sha256": "5fcbfbfce393268c5999fcf69fcee851e0c22474ce39b054eb5cc44e379746f1"
+  },
+  "u256_add_mod_p": {
+    "n_in": 512,
+    "n_out": 256,
+    "gates": 15876,
+    "instructions": 15876,
+    "bytes": 111132,
+    "sha256": "dab2925c22f33cbfb0f2c92adee06a3c5c078d4e68a686ef55fd0144f5f931d0"
+  },
+  "u256_sub_mod_p": {
+    "n_in": 512,
+    "n_out": 256,
+    "gates": 10242,
+    "instructions": 10242,
+    "bytes": 71694,
+    "sha256": "a4c45687deca6eeda852fb65b73c9f22c7bdda2d24557a6edc4cdd97a2a7db84"
+  },
+  "u256_add_mod_n": {
+    "n_in": 512,
+    "n_out": 256,
+    "gates": 15876,
+    "instructions": 15876,
+    "bytes": 111132,
+    "sha256": "d7453699e552088c4b0d51fbf709ad98b7cbf0229ab8aaa2cb68ce82e926c5f8"
+  },
+  "u256_sub_mod_n": {
+    "n_in": 512,
+    "n_out": 256,
+    "gates": 10242,
+    "instructions": 10242,
+    "bytes": 71694,
+    "sha256": "6fa94d548a9ac9286566d19cde09bba62bdafb423949ce2dcdeedfaace0183c5"
+  },
+  "u256_mulmod_seq": {
+    "n_in": 513,
+    "n_out": 256,
+    "gates": 38412,
+    "instructions": 39180,
+    "bytes": 271956,
+    "sha256": "feda012d9efc9a26590d3bb206216a45af3dbdc33bcb0759accbc7df86038518"
+  },
+  "ecrecover_core": {
+    "n_in": 72,
+    "n_out": 65,
+    "gates": 73653,
+    "instructions": 74430,
+    "bytes": 518679,
+    "sha256": "b4774e57f427ff57b6d1bf4cafdc15cc3cd17a6be2466c5f7923e91bf253fd7d"
+  }
+}

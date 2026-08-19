@@ -1,0 +1,37 @@
+{
+  "kl_ringa_lo": {
+    "bytes": 23682,
+    "sha256": "5f62ced6d7054bff5cdd3b47dd661f292ea46f17f38bcf14692fe1ddb16a30b1",
+    "n_in": 38,
+    "n_out": 64,
+    "gas_est": 9970122
+  },
+  "kl_ringa_hi": {
+    "bytes": 23682,
+    "sha256": "5f62ced6d7054bff5cdd3b47dd661f292ea46f17f38bcf14692fe1ddb16a30b1",
+    "n_in": 38,
+    "n_out": 64,
+    "gas_est": 9970122
+  },
+  "kl_rho": {
+    "bytes": 12740,
+    "sha256": "a5dd3b52cb1ba9a1ddc6ef264260e00afdbf0b32c7aa42c46c1a484a80920fb3",
+    "n_in": 69,
+    "n_out": 64,
+    "gas_est": 5363540
+  },
+  "kl_ringb": {
+    "bytes": 26261,
+    "sha256": "c2be8eefec197744e854658a3295d950a2de6f0ba1c38b7700273d09607bf343",
+    "n_in": 75,
+    "n_out": 192,
+    "gas_est": 11055881
+  },
+  "kl_top": {
+    "bytes": 27350,
+    "sha256": "b9ed1457e39c6978c67664ba3498fe58cbca8743427f8bd35daa25d54a65784b",
+    "n_in": 65,
+    "n_out": 66,
+    "gas_est": 11514350
+  }
+}
