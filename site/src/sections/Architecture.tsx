@@ -5,23 +5,22 @@ export default function Architecture() {
     <section className="border-y border-zinc-800/80 bg-zinc-900/40 py-20">
       <div className="mx-auto max-w-5xl px-6">
         <h2 className="text-center text-3xl font-bold text-zinc-50">
-          处理器结构：一条 REF 引用链
+          13 颗电路怎么拼成一台机器
         </h2>
         <p className="mx-auto mt-3 max-w-2xl text-center text-sm leading-relaxed text-zinc-500">
-          受 BSC 单交易 gas 协议上限（BEP-652，16.7M）约束，Keccak-256
-          引擎被拆成 5 颗可独立流片的零件，由主控电路 kl_top 通过 7 条
-          REF 指令在每次求值时缝合——这正是 TapeOut
-          「电路引用电路」原语的旗舰级示范。
+          BSC 单次交易最多烧 1677 万 gas，一颗大芯片塞不进去。所以 Keccak-256
+          引擎被拆成 5 颗小零件，再由主控电路用 7 条 REF 指令缝回来。
+          这是 TapeOut「电路引用电路」最完整的一次实战。
         </p>
 
         {/* REF 结构图 */}
         <div className="mx-auto mt-12 max-w-2xl">
           <div className="rounded-xl border-2 border-amber-500/60 bg-zinc-950 px-6 py-4 text-center">
             <p className="font-mono text-lg font-bold text-amber-400">
-              kl_top <span className="text-xs text-zinc-500">cid13 · 主控状态机</span>
+              主控电路 <span className="text-xs text-zinc-500">kl_top · 27,350 字节 · 每次驱动 2,400 多拍</span>
             </p>
             <p className="mt-1 text-xs text-zinc-500">
-              65 入 66 出 · 27,350 B · 逐拍驱动 2,400+ 拍完成一次 Keccak-256
+              输入 65 位 → 输出 66 位 · 逐拍缝合下方 5 颗零件完成一次 Keccak-256
             </p>
           </div>
           <div className="mx-auto h-6 w-px bg-amber-500/50" />
@@ -56,21 +55,21 @@ export default function Architecture() {
 
         {/* 电路名册 */}
         <h3 className="mt-20 text-center text-2xl font-bold text-zinc-50">
-          链上电路名册
+          13 颗电路的名片
         </h3>
         <p className="mt-2 text-center text-sm text-zinc-500">
-          每颗电路的网表字节均可从合约回读并与本地指纹逐字节比对
+          每颗电路的字节都能从合约回读，和本地指纹逐字节比对
         </p>
         <div className="mt-8 overflow-x-auto rounded-xl border border-zinc-800">
           <table className="w-full min-w-[720px] text-left text-sm">
             <thead>
               <tr className="border-b border-zinc-800 bg-zinc-900 text-xs text-zinc-500">
-                <th className="px-4 py-3 font-medium">cid</th>
-                <th className="px-4 py-3 font-medium">名称</th>
-                <th className="px-4 py-3 font-medium">功能</th>
-                <th className="px-4 py-3 font-medium">引脚</th>
-                <th className="px-4 py-3 font-medium">字节</th>
-                <th className="px-4 py-3 font-medium">sha256 前 12 位</th>
+                <th className="px-4 py-3 font-medium">#</th>
+                <th className="px-4 py-3 font-medium">名字</th>
+                <th className="px-4 py-3 font-medium">做什么</th>
+                <th className="px-4 py-3 font-medium">接口</th>
+                <th className="px-4 py-3 font-medium">大小</th>
+                <th className="px-4 py-3 font-medium">指纹</th>
               </tr>
             </thead>
             <tbody className="font-mono text-xs">
@@ -91,7 +90,7 @@ export default function Architecture() {
           </table>
         </div>
         <p className="mt-4 text-center text-xs text-zinc-600">
-          处理器合约：
+          合约地址：
           <a
             className="ml-1 font-mono text-amber-500/80 hover:text-amber-400"
             href={BSCSCAN_CPU}

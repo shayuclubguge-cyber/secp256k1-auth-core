@@ -5,26 +5,23 @@ export default function Economics() {
     <section className="bg-zinc-950 py-20">
       <div className="mx-auto max-w-4xl px-6">
         <h2 className="text-center text-3xl font-bold text-zinc-50">
-          拥有这台处理器的一部分
+          这台机器的零件也是代币
         </h2>
         <p className="mx-auto mt-3 max-w-2xl text-center text-sm leading-relaxed text-zinc-500">
-          TapeOut 协议里，每台处理器的与非门（NAND）和锁存器（LATCH）都是
-          ERC-1155 代币。铸造新电路要消耗它们——你的电路每 REF
-          引用一次这台处理器的零件，都是对它的一次使用。
+          TapeOut 里，NAND 和 LATCH 都是 ERC-1155 代币。造新电路要消耗它们。
+          你的电路每引用一次我们的零件，都是在用这台机器。
         </p>
         <div className="mt-10 grid gap-4 md:grid-cols-3">
           <div className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-6">
             <p className="font-mono text-2xl font-bold text-amber-400">NAND</p>
             <p className="mt-2 text-sm text-zinc-400">
-              与非门代币（id 0）。铸造任何电路的基本砖块，本处理器由 31,890
-              个与非门构成。
+              代币（id 0）。造电路的基本砖块。这台机器用了 31,890 个。
             </p>
           </div>
           <div className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-6">
             <p className="font-mono text-2xl font-bold text-amber-400">LATCH</p>
             <p className="mt-2 text-sm text-zinc-400">
-              锁存器代币（id 1）。有状态电路的记忆单元，本处理器含 8,606
-              个锁存器。
+              代币（id 1）。有状态电路的记忆单元。这台机器用了 8,606 个。
             </p>
           </div>
           <div className="rounded-xl border border-amber-500/40 bg-amber-500/5 p-6">
@@ -32,8 +29,8 @@ export default function Economics() {
               0.0001 BNB
             </p>
             <p className="mt-2 text-sm text-zinc-400">
-              每枚代币铸造价。在 TapeOut
-              官网连接钱包、选中本处理器即可铸造，随后可铸造自己的电路。
+              一枚。去 TapeOut 官网连钱包，选这台处理器就能铸造。
+              然后你可以造自己的电路。
             </p>
           </div>
         </div>

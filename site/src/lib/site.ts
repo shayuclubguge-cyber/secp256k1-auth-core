@@ -1,8 +1,7 @@
 // 站点数据 —— 全部取自链上实测（2026-08-18）
 export const SITE_NAME_ZH = "BSC签名验证核心";
 export const SITE_NAME_EN = "BSC SignVerify Core";
-export const TAGLINE =
-  "第一台用纯与非门在链上重建 ecrecover 的处理器";
+export const TAGLINE = "第一台纯 NAND 门链上处理器";
 
 export const CPU_ADDRESS = "0xa3b6d9121146c29fb236001b93a45cb7a78a2247";
 export const TRANSISTORS_ADDRESS =
@@ -12,10 +11,10 @@ export const BSCSCAN_CPU = `https://bscscan.com/address/${CPU_ADDRESS}`;
 export const BSCSCAN_TOKENS = `https://bscscan.com/address/${TRANSISTORS_ADDRESS}`;
 
 export const STATS = [
-  { value: "31,890", label: "与非门（NAND）" },
-  { value: "8,606", label: "锁存器（LATCH）" },
-  { value: "13", label: "链上电路（cid 1–13）" },
-  { value: "100%", label: "字节级回读一致" },
+  { value: "31,890", label: "NAND" },
+  { value: "8,606", label: "LATCH" },
+  { value: "13 颗", label: "链上电路" },
+  { value: "100%", label: "全量回读一致" },
 ];
 
 export interface CircuitRow {
@@ -40,11 +39,11 @@ export const CIRCUITS: CircuitRow[] = [
 ];
 
 export const REF_EDGES = [
-  { from: "kl_top (cid13)", to: "keccak_comp (cid7)", label: "θD / XOR3 / χ ×3" },
-  { from: "kl_top (cid13)", to: "kl_ringa_lo (cid9)", label: "环 A 低 32 位" },
-  { from: "kl_top (cid13)", to: "kl_ringa_hi (cid10)", label: "环 A 高 32 位" },
-  { from: "kl_top (cid13)", to: "kl_rho (cid11)", label: "ρ 移位" },
-  { from: "kl_top (cid13)", to: "kl_ringb (cid12)", label: "环 B + χ 装配" },
+  { from: "主控", to: "Keccak 组件", label: "哈希运算 ×3" },
+  { from: "主控", to: "状态环 A 低 32 位", label: "800 锁存器" },
+  { from: "主控", to: "状态环 A 高 32 位", label: "800 锁存器" },
+  { from: "主控", to: "ρ 移位器", label: "纯组合" },
+  { from: "主控", to: "状态环 B + 装配", label: "1,600 锁存器" },
 ];
 
 // 演示签名（Hardhat 公开测试账户 #0，私钥全网公开，仅作演示）

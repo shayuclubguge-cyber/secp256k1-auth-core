@@ -52,18 +52,17 @@ export default function Verifier() {
     <section id="verify" className="bg-zinc-950 py-20">
       <div className="mx-auto max-w-3xl px-6">
         <h2 className="text-center text-3xl font-bold text-zinc-50">
-          现场验证一条签名
+          签个名试试
         </h2>
         <p className="mx-auto mt-3 max-w-xl text-center text-sm leading-relaxed text-zinc-500">
-          这里用软件库瞬时演示同一套算法；链上处理器以 40,496
-          个晶体管（31,890 NAND + 8,606 LATCH）逐门执行完全相同的运算——Keccak-256 摘要 → secp256k1
-          公钥恢复 → 地址比对，每一步的电路网表都可在下方名册中查验。
+          下面用软件库跑一遍同样的算法。链上那 40,496 个晶体管，逐门执行的就是这套运算——
+          哈希、公钥恢复、地址比对。每一步的电路网表，都能在下面的名册里查到。
         </p>
 
         <div className="mt-10 space-y-4 rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
           <div>
             <label className="mb-1 block text-xs font-medium text-zinc-400">
-              消息（EIP-191 个人签名格式）
+              消息 <span className="text-zinc-600">EIP-191 格式</span>
             </label>
             <textarea
               className={inputCls + " h-20 resize-none"}
@@ -74,7 +73,7 @@ export default function Verifier() {
           </div>
           <div>
             <label className="mb-1 block text-xs font-medium text-zinc-400">
-              签名（65 字节 r‖s‖v）
+              签名 <span className="text-zinc-600">65 字节，r + s + v</span>
             </label>
             <input
               className={inputCls}
@@ -85,7 +84,7 @@ export default function Verifier() {
           </div>
           <div>
             <label className="mb-1 block text-xs font-medium text-zinc-400">
-              声称的签名地址
+              签名地址
             </label>
             <input
               className={inputCls}

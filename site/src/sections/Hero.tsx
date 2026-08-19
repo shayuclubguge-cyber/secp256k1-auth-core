@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { STATS, SITE_NAME_EN, SITE_NAME_ZH, TAGLINE, BSCSCAN_CPU } from "../lib/site";
+import { STATS, SITE_NAME_ZH, TAGLINE, BSCSCAN_CPU } from "../lib/site";
 
 export default function Hero() {
   return (
@@ -18,19 +18,18 @@ export default function Hero() {
         <h1 className="text-5xl font-black tracking-tight text-zinc-50 md:text-6xl">
           {SITE_NAME_ZH}
         </h1>
-        <p className="mt-3 font-mono text-xl text-amber-400">{SITE_NAME_EN}</p>
+        <p className="mt-3 font-mono text-xl text-amber-400">On-Chain ecrecover Engine</p>
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-zinc-400">
-          {TAGLINE}——把 BNB Chain 每笔交易的签名验证（ecrecover）用
-          <span className="text-amber-300"> 40,496 个晶体管</span>在链上重建。
-          任何电路都可以免费、可信地回答：
-          <span className="text-zinc-200">「这条消息是不是这个地址签的？」</span>
+          {TAGLINE}。用 <span className="text-amber-300">40,496 个晶体管</span>，在
+          BNB Chain 上复现了 ecrecover 签名验证。任何合约都能免费调用，回答一个问题：
+          <span className="text-zinc-200">「这条消息，是不是这个地址签的？」</span>
         </p>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
           <a
             href="#verify"
             className="rounded-lg bg-amber-500 px-8 py-3 text-base font-bold text-zinc-950 transition hover:bg-amber-400"
           >
-            立即验证签名
+            立即验证
           </a>
           <a
             href={BSCSCAN_CPU}
@@ -38,13 +37,13 @@ export default function Hero() {
             rel="noreferrer"
             className="rounded-lg border border-zinc-700 px-8 py-3 text-base font-medium text-zinc-300 transition hover:border-amber-500/60 hover:text-amber-300"
           >
-            在 BscScan 查看处理器
+            链上查看
           </a>
           <Link
             to="/tutorial"
             className="rounded-lg border border-zinc-700 px-8 py-3 text-base font-medium text-zinc-300 transition hover:border-amber-500/60 hover:text-amber-300"
           >
-            新手教程：买晶体管 → 搭电路 → 流片
+            新手指南：买晶体管 → 搭电路 → 流片
           </Link>
         </div>
         <dl className="mx-auto mt-16 grid max-w-3xl grid-cols-2 gap-6 md:grid-cols-4">
